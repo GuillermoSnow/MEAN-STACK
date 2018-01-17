@@ -4,7 +4,8 @@
   "description": "MEAN",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "cd client && ng build --prod && cd.. && node index.js"
   },
   "repository": {
     "type": "git",
@@ -12,7 +13,10 @@
   },
   "keywords": [
     "MEAN",
-    "Stack"
+    "Stack",
+    "Angular",
+    "2",
+    "Application"
   ],
   "author": "Guillermo",
   "license": "ISC",
@@ -21,7 +25,11 @@
   },
   "homepage": "https://github.com/GuillermoSnow/MEAN-STACK#readme",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
     "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
     "mongoose": "^4.13.7"
   }
 }
